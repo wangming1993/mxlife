@@ -24,5 +24,13 @@ Page({
       this.setData({
         list: list
       });
+    },
+    changeName: function (e) {
+      wx.showModal({
+        title: "显示模态弹窗",
+        content: "杂烩小生活，精彩大生活",
+        cancelText: "关闭弹窗",
+        showCancel:false
+      })
     }
   })
